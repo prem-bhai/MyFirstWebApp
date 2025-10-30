@@ -1,0 +1,153 @@
+﻿/* -----------------------------------------------------
+   🌐 Modern Dynamic UI CSS for .NET App Homepage
+   ----------------------------------------------------- */
+
+/* 🌟 General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e6f0ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🌟 Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+a.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1b6ec2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+a.navbar-brand:hover {
+  color: #0a58ca;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #1b6ec2;
+  transform: translateY(-2px);
+}
+
+/* 🌈 Buttons */
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(90deg, #1b6ec2, #3a89f4);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(27, 110, 194, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #3a89f4, #1b6ec2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(27, 110, 194, 0.4);
+}
+
+/* 🧭 Navigation Pills */
+.nav-pills .nav-link {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background: linear-gradient(90deg, #1b6ec2, #3a89f4);
+  box-shadow: 0 4px 10px rgba(27, 110, 194, 0.3);
+}
+
+/* 📦 Containers */
+.container {
+  flex: 1;
+  padding: 3rem 2rem;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+/* 📜 Borders */
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* 💬 Accept Policy Button */
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+  background-color: #1b6ec2;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+button.accept-policy:hover {
+  background-color: #155ba0;
+}
+
+/* 🦶 Footer */
+.footer {
+  background: #1b6ec2;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #d0e4ff;
+}
+
+/* 🌟 Smooth Animation */
+* {
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,17 @@
+# Visual Studio temporary files
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+
+# Publish output
+publish/
+*.dbmdl
+
+# Other unnecessary files
+*.cache
+*.log
+*.ide

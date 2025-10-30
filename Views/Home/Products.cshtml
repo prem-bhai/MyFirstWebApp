@@ -1,0 +1,35 @@
+@model IEnumerable<MyFirstWebApp.Models.Product>
+@{
+    ViewData["Title"] = "Products";
+}
+
+<section class="text-center my-5">
+    <h2 class="fw-bold mb-4 text-primary">Our Featured Products</h2>
+    <p class="text-muted mb-5">Explore our latest and most popular electronics — crafted for performance and quality.</p>
+
+    <div class="row g-4">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <div class="product-card box-shadow">
+                    <img src="@(product.ImageUrl ?? "https://via.placeholder.com/350x250?text=Product")"
+                         alt="@product.Name"
+                         class="product-img">
+
+                    <div class="product-content">
+                        <h5 class="fw-semibold mt-3">@product.Name</h5>
+                        <p class="text-muted small">@product.Category</p>
+                        <p class="fw-bold text-primary fs-5 mb-2">$@product.Price</p>
+
+                        <form asp-controller="Cart" asp-action="Add" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="productId" value="@product.Id" />
+                            <input type="hidden" name="quantity" value="1" />
+                            <button type="submit" class="btn btn-primary w-100">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
