@@ -24,12 +24,74 @@ A **.NET MVC e-commerce web application** featuring user authentication, shoppin
 
 ---
 
-## ⚙️ Installation Steps
+⚙️ Installation & Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/prem-suthar/MyFirstWebApp.git
-   cd MyFirstWebApp
+Follow these steps to set up and run the project locally:
+
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/MyFirstWebApp.git
+
+
+(Replace your-username with your actual GitHub username.)
+
+2️⃣ Open the Project
+
+Open the folder in Visual Studio Code or Visual Studio.
+
+Make sure you have .NET SDK (8.0 or later) installed.
+
+3️⃣ Install Dependencies
+
+Run this command in the terminal:
+
+dotnet restore
+
+
+This restores all NuGet packages your project needs.
+
+4️⃣ Set Up the Database
+
+Open the file appsettings.json and update your SQL Server connection string:
+
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=MyFirstWebAppDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+}
+
+
+Replace YOUR_SERVER_NAME with your local SQL Server instance name.
+
+5️⃣ Apply Migrations
+
+Run the following command to create the database:
+
+dotnet ef database update
+
+
+(If you don’t have EF tools, install them first using dotnet tool install --global dotnet-ef)
+
+6️⃣ Run the Application
+
+Start your server:
+
+dotnet run
+
+
+Then open your browser and visit:
+👉 http://localhost:5000
+
+(or the URL shown in your terminal)
+
+7️⃣ Done!
+
+You can now:
+
+Register a new user
+
+Log in
+
+Add products to cart
+
+Explore the website 🎉
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
