@@ -30,3 +30,16 @@ A **.NET MVC e-commerce web application** featuring user authentication, shoppin
    ```bash
    git clone https://github.com/prem-suthar/MyFirstWebApp.git
    cd MyFirstWebApp
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+![Home Page](./screenshots/home.png)
+
+### 💻 Products Page
+![Products Page](./screenshots/product.png)
+
+### 🛒 Cart Page
+![Cart Page](./screenshots/cart.png)
+
+### 🔐 Register Page
+![Register Page](./screenshots/register.png)
