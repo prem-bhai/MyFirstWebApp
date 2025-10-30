@@ -1,17 +1,30 @@
-# Visual Studio temporary files
+# Visual Studio / VS Code temporary files
 .vs/
+.vscode/
 *.user
 *.suo
 
 # Build results
 bin/
 obj/
+Debug/
+Release/
 
 # Publish output
 publish/
 *.dbmdl
-
-# Other unnecessary files
 *.cache
 *.log
-*.ide
+
+# User-specific files
+*.userosscache
+*.sln.docstates
+
+# Dependency directories
+node_modules/
+packages/
+
+# Others
+*.swp
+*.DS_Store
+Thumbs.db
